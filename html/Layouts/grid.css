@@ -1,0 +1,131 @@
+.el-1{
+    background-color: aqua;
+    grid-column: 1  / -1;
+}
+
+.el-2{
+    background-color: red;
+    grid-row: 2 / span 2;
+}
+
+.el-3{
+    background-color: pink;
+}
+
+.el-4{
+    background-color: yellow;
+}
+
+.el-5{
+    background-color: blue;
+}
+
+.el-6{
+    background-color: lawngreen;
+    grid-column: 1 / span 2;
+}
+
+.el-7{
+    background-color: wheat;
+    grid-column: 1 / 3;
+}
+
+.el-8{
+    background-color: yellow;
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+}
+
+.el-9{
+    background-color: blueviolet;
+}
+
+.el{
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+    /* width: 100px; */
+    border: 3px solid black;
+}
+
+.container-1{
+    display: grid;
+    grid-template-columns: 250px 200px 400px;
+    grid-template-rows: 100px 200px 100px 100px;
+    width: 800px;
+    height: 600px;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+    margin: 50px;
+    /* gap: 10px; */
+    row-gap: 20px;
+    column-gap: 30px;;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 50px;
+    margin-top: 100px;
+    gap: 10px;
+}
+
+.cl-1{
+    background-color: aqua;
+    justify-self: start;
+}
+
+.cl-2{
+    background-color: red;
+    justify-self: end;
+}
+
+.cl-3{
+    background-color: pink;
+}
+
+.cl-4{
+    background-color: yellow;
+    align-self: baseline;
+}
+
+.cl-5{
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.cl-6{
+    background-color: lawngreen;
+}
+
+.cl-7{
+    background-color: wheat;
+
+}
+
+.cl-8{
+    background-color: yellow;
+}
+
+.cl-9{
+    background-color: blueviolet;
+}
+
+.cl{
+    width: 100px;
+    font-size: 32px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid{
+    border: 2px solid black;
+}
