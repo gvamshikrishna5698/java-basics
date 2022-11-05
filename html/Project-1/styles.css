@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding-bottom: 84px;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(images/banner.png);
+    background-size: cover;
+    position: relative;
+}
+nav{
+    padding:2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 180px;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    background-color: tomato;
+    height: 2px;
+    margin: auto;
+    display: block;
+    transition: 0.5s all ease;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 99%;
+    text-align: center;
+    color: #fff;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px 0;
+    font-weight: 300;
+}
+
+.cta{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 45px;
+    border: 1px solid #fff;
+    transition: 0.5s all ease;
+}
+
+.cta:hover{
+    background-color: tomato;
+}
+
+/* Styles for course section */
+.course{
+    height: 100vh;
+}
+
+.course h1{
+    margin-top: 48px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.course p{
+    text-align: center;
+    font-weight: 300;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 72px;
+    justify-content: space-between;
+}
+
+.course-col{
+    background-color: #fff3f3;
+    flex-basis: 30%;
+    padding: 32px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+.course-col h3{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.course-col p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+}
+
+/* Campus styles */
+.campus{
+    height: 100vh;
+    width: 100%;
+    padding-top: 48px;
+}
+
+.campus h1{
+    margin-top: 48px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.campus p{
+    text-align: center;
+    margin-top: 22px;
+    font-weight: 300;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.layer:hover{
+    background: rgb(226, 0, 0,0.7);
+}
+
+.layer h3{
+    color: #fff;
+    width: 100%;
+    font-weight: 400;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    text-align: center;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
